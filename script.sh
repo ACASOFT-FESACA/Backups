@@ -44,7 +44,7 @@ envia_sms "$ASUNTO"
 else
 echo "recuerda que el nombre del archivo es respaldo seguido de la fecha automaticamente";
 
- mysqldump -B --all-databases > backups/respaldo_`date +%d-%m-%y_%H:%M:%S`.sql
+ mysqldump -B --all-databases > Backups/respaldo_`date +%d-%m-%y_%H:%M:%S`.sql
  git add .
 git commit -m "prueba"
 git push
